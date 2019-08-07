@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>testTask</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/media_queries.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="header">
+        <div class="wrapperForHeader">
+            <div class="companyLogo">
+                <a href="#"><span>logo</span></a>
+            </div>
+            <div class="navAndContacts">
+                <!-- desktop navigation start -->
+                <div class="desktopNav">
+                    <div class="topNavContacts">
+                        <nav class="topNav">
+                            <ul>
+                                <li><a href="#">Про нас</a></li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Контакти</a></li>
+                            </ul>
+                        </nav>
+                        <div class="contacts">
+                            <div class="address">
+                                <p>Адреса:</p>
+                                <p>м. Львів, вул. Котлярська, 2</p>
+                            </div>
+                            <div class="skype">
+                                <p>Skype:</p>
+                                <p>flora2115</p>
+                            </div>
+                            <div class="phoneNumber">
+                                <p>(032)297 16-45</p>
+                                <p>(067)756 58-76</p>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="bottomNav">
+                        <ul>
+                            <li><a href="#">Головна</a></li>
+                            <li><a href="#">Автобусом в Європу</a></li>
+                            <li><a href="#">Країни</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Італія</a></li>
+                                    <li><a href="#">Греція</a>
+                                    <li><a href="#">Болгарія</a></li>
+                                    <li><a href="#">Іспанія</a>
+                                </ul>
+                            </li>
+                            <li><a href="#">Круїзи</a></li>
+                            <li><a href="#">Тури Україною</a></li>
+                            <li><a href="#">Раннє бронювання</a></li>
+                            <li><a href="#">Акція одного дня</a></li>
+                            <li><a href="#">Акція на вікенд</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- desktop navigation end -->
+                <!-- mobile navigation start -->
+                <div class="contacts contMobile">
+                    <div class="address">
+                        <p>Адреса:</p>
+                        <p>м. Львів, вул. Котлярська, 2</p>
+                    </div>
+                    <div class="skype">
+                        <p>Skype:</p>
+                        <p>flora2115</p>
+                    </div>
+                    <div class="phoneNumber">
+                        <p>(032)297 16-45</p>
+                        <p>(067)756 58-76</p>
+                    </div>
+                </div>
+                <div class="navButton">
+                    <img src="images/burgerMenu.svg" alt="">
+                    <nav class="mobileNavigation">
+                        <ul class="navMenu">
+                            <li><a href="#">Про нас</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Контакти</a></li>
+                            <li><a href="#">Головна</a></li>
+                            <li><a href="#">Автобусом в Європу</a></li>
+                            <li><a href="#">Країни</a></li>
+                            <li><a href="#">Круїзи</a></li>
+                            <li><a href="#">Тури Україною </a></li>
+                            <li><a href="#">Раннє бронювання</a></li>
+                            <li><a href="#">Акція одного дня</a></li>
+                            <li><a href="#">Акція на вікенд</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- mobile navigation end -->
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <main>
+        <section class="slider">
+            <div class="overlaySlider">
+                <div class="wrapperSlider">
+                    <div class="slides">
+                        <div class="slide slide1">
+                            <h1>Нові горизонти вашого відпочинку</h1>
+                            <p>Ми поставили перед собою завдання зробити якісний відпочинок доступним для всіх українських сімей і розробити нову концепцію щасливого і безтурботного відпочинку з дітьми</p>
+                        </div>
+                        <div class="slide slide2">
+                            <h1>Lorem ipsum dolor sit.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe delectus eaque ut recusandae ab, perspiciatis sit ex repellendus. Molestias voluptate eum eligendi ratione!</p>
+                        </div>
+                        <div class="slide slide3">
+                            <h1>Lorem ipsum dolor sit.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatem quasi totam amet maxime aliquam natus. Similique a minima enim, quia! Aliquid, accusantium.</p>
+                        </div>
+                        <div class="slide slide4">
+                            <h1>Lorem ipsum dolor sit.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit provident nam sequi consequatur distinctio autem cupiditate quos officiis ab tempore, consequuntur ex laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sliderDots">
+                    <div onclick="currentSlide(0)"></div>
+                    <div onclick="currentSlide(1)"></div>
+                    <div onclick="currentSlide(2)"></div>
+                    <div onclick="currentSlide(3)"></div>
+                </div>
+            </div>
+        </section>
+        <section class="hotTours">
+            <div class="wrapperHotTours">
+                <h2>Гарячі тури</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit assumenda, eum totam.</p>
+                <div class="allTours">
+                    <a href="#">
+                        <div class="tour">
+                            <img src="images/tourImg1.jpg" alt="Spain photo">
+                            <div class="topTour">
+                                <div class="stars"><img src="images/iconStars.png" alt=""></div>
+                                <div class="likes">
+                                    <div><img src="images/iconPerson.png" alt="">78</div>
+                                    <div><img src="images/iconHeart.png" alt="">15</div>
+                                </div>
+                            </div>
+                            <div class="tourContent">
+                                <p>Hotel LAMPA&PATAYA</p>
+                                <p>ІСПАНІЯ</p>
+                                <div class="reserve">
+                                    <p>Особи - двоє дорослих від 15.03.2018 - 15.04.2018</p>
+                                    <div>Забронювати</div>
+                                </div>
+                                <div class="trap">
+                                    <p>ВІД 500$</p>
+                                    <img src="images/iconFire.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="tour">
+                            <img src="images/tourImg2.jpg" alt="Spain photo">
+                            <div class="topTour">
+                                <div class="stars"><img src="images/iconStars.png" alt=""></div>
+                                <div class="likes">
+                                    <div><img src="images/iconPerson.png" alt="">78</div>
+                                    <div><img src="images/iconHeart.png" alt="">15</div>
+                                </div>
+                            </div>
+                            <div class="tourContent">
+                                <p>Hotel LAMPA&PATAYA</p>
+                                <p>ІСПАНІЯ</p>
+                                <div class="reserve">
+                                    <p>Особи - двоє дорослих від 15.03.2018 - 15.04.2018</p>
+                                    <div>Забронювати</div>
+                                </div>
+                                <div class="trap">
+                                    <p>ВІД 500$</p>
+                                    <img src="images/iconFire.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="tour">
+                            <img src="images/tourImg3.jpg" alt="Spain photo">
+                            <div class="topTour">
+                                <div class="stars"><img src="images/iconStars.png" alt=""></div>
+                                <div class="likes">
+                                    <div><img src="images/iconPerson.png" alt="">78</div>
+                                    <div><img src="images/iconHeart.png" alt="">15</div>
+                                </div>
+                            </div>
+                            <div class="tourContent">
+                                <p>Hotel LAMPA&PATAYA</p>
+                                <p>ІСПАНІЯ</p>
+                                <div class="reserve">
+                                    <p>Особи - двоє дорослих від 15.03.2018 - 15.04.2018</p>
+                                    <div>Забронювати</div>
+                                </div>
+                                <div class="trap">
+                                    <p>ВІД 500$</p>
+                                    <img src="images/iconFire.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="tour">
+                            <img src="images/tourImg1.jpg" alt="Spain photo">
+                            <div class="topTour">
+                                <div class="stars"><img src="images/iconStars.png" alt=""></div>
+                                <div class="likes">
+                                    <div><img src="images/iconPerson.png" alt="">78</div>
+                                    <div><img src="images/iconHeart.png" alt="">15</div>
+                                </div>
+                            </div>
+                            <div class="tourContent">
+                                <p>Hotel LAMPA&PATAYA</p>
+                                <p>ІСПАНІЯ</p>
+                                <div class="reserve">
+                                    <p>Особи - двоє дорослих від 15.03.2018 - 15.04.2018</p>
+                                    <div>Забронювати</div>
+                                </div>
+                                <div class="trap">
+                                    <p>ВІД 500$</p>
+                                    <img src="images/iconFire.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="showMore">
+                        <div class="tour">
+                            <img src="images/tourImg2.jpg" alt="Spain photo">
+                            <div class="topTour">
+                                <div class="stars"><img src="images/iconStars.png" alt=""></div>
+                                <div class="likes">
+                                    <div><img src="images/iconPerson.png" alt="">78</div>
+                                    <div><img src="images/iconHeart.png" alt="">15</div>
+                                </div>
+                            </div>
+                            <div class="tourContent">
+                                <p>Hotel LAMPA&PATAYA</p>
+                                <p>ІСПАНІЯ</p>
+                                <div class="reserve">
+                                    <p>Особи - двоє дорослих від 15.03.2018 - 15.04.2018</p>
+                                    <div>Забронювати</div>
+                                </div>
+                                <div class="trap">
+                                    <p>ВІД 500$</p>
+                                    <img src="images/iconFire.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="showMore">
+                        <div class="tour">
+                            <img src="images/tourImg3.jpg" alt="Spain photo">
+                            <div class="topTour">
+                                <div class="stars"><img src="images/iconStars.png" alt=""></div>
+                                <div class="likes">
+                                    <div><img src="images/iconPerson.png" alt="">78</div>
+                                    <div><img src="images/iconHeart.png" alt="">15</div>
+                                </div>
+                            </div>
+                            <div class="tourContent">
+                                <p>Hotel LAMPA&PATAYA</p>
+                                <p>ІСПАНІЯ</p>
+                                <div class="reserve">
+                                    <p>Особи - двоє дорослих від 15.03.2018 - 15.04.2018</p>
+                                    <div>Забронювати</div>
+                                </div>
+                                <div class="trap">
+                                    <p>ВІД 500$</p>
+                                    <img src="images/iconFire.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="showMore">
+                        <div class="tour">
+                            <img src="images/tourImg1.jpg" alt="Spain photo">
+                            <div class="topTour">
+                                <div class="stars"><img src="images/iconStars.png" alt=""></div>
+                                <div class="likes">
+                                    <div><img src="images/iconPerson.png" alt="">78</div>
+                                    <div><img src="images/iconHeart.png" alt="">15</div>
+                                </div>
+                            </div>
+                            <div class="tourContent">
+                                <p>Hotel LAMPA&PATAYA</p>
+                                <p>ІСПАНІЯ</p>
+                                <div class="reserve">
+                                    <p>Особи - двоє дорослих від 15.03.2018 - 15.04.2018</p>
+                                    <div>Забронювати</div>
+                                </div>
+                                <div class="trap">
+                                    <p>ВІД 500$</p>
+                                    <img src="images/iconFire.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="showMore">
+                        <div class="tour">
+                            <img src="images/tourImg2.jpg" alt="Spain photo">
+                            <div class="topTour">
+                                <div class="stars"><img src="images/iconStars.png" alt=""></div>
+                                <div class="likes">
+                                    <div><img src="images/iconPerson.png" alt="">78</div>
+                                    <div><img src="images/iconHeart.png" alt="">15</div>
+                                </div>
+                            </div>
+                            <div class="tourContent">
+                                <p>Hotel LAMPA&PATAYA</p>
+                                <p>ІСПАНІЯ</p>
+                                <div class="reserve">
+                                    <p>Особи - двоє дорослих від 15.03.2018 - 15.04.2018</p>
+                                    <div>Забронювати</div>
+                                </div>
+                                <div class="trap">
+                                    <p>ВІД 500$</p>
+                                    <img src="images/iconFire.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="showMore">
+                        <div class="tour">
+                            <img src="images/tourImg3.jpg" alt="Spain photo">
+                            <div class="topTour">
+                                <div class="stars"><img src="images/iconStars.png" alt=""></div>
+                                <div class="likes">
+                                    <div><img src="images/iconPerson.png" alt="">78</div>
+                                    <div><img src="images/iconHeart.png" alt="">15</div>
+                                </div>
+                            </div>
+                            <div class="tourContent">
+                                <p>Hotel LAMPA&PATAYA</p>
+                                <p>ІСПАНІЯ</p>
+                                <div class="reserve">
+                                    <p>Особи - двоє дорослих від 15.03.2018 - 15.04.2018</p>
+                                    <div>Забронювати</div>
+                                </div>
+                                <div class="trap">
+                                    <p>ВІД 500$</p>
+                                    <img src="images/iconFire.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="showMore">
+                        <div class="tour">
+                            <img src="images/tourImg1.jpg" alt="Spain photo">
+                            <div class="topTour">
+                                <div class="stars"><img src="images/iconStars.png" alt=""></div>
+                                <div class="likes">
+                                    <div><img src="images/iconPerson.png" alt="">78</div>
+                                    <div><img src="images/iconHeart.png" alt="">15</div>
+                                </div>
+                            </div>
+                            <div class="tourContent">
+                                <p>Hotel LAMPA&PATAYA</p>
+                                <p>ІСПАНІЯ</p>
+                                <div class="reserve">
+                                    <p>Особи - двоє дорослих від 15.03.2018 - 15.04.2018</p>
+                                    <div>Забронювати</div>
+                                </div>
+                                <div class="trap">
+                                    <p>ВІД 500$</p>
+                                    <img src="images/iconFire.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="showMore">
+                        <div class="tour">
+                            <img src="images/tourImg2.jpg" alt="Spain photo">
+                            <div class="topTour">
+                                <div class="stars"><img src="images/iconStars.png" alt=""></div>
+                                <div class="likes">
+                                    <div><img src="images/iconPerson.png" alt="">78</div>
+                                    <div><img src="images/iconHeart.png" alt="">15</div>
+                                </div>
+                            </div>
+                            <div class="tourContent">
+                                <p>Hotel LAMPA&PATAYA</p>
+                                <p>ІСПАНІЯ</p>
+                                <div class="reserve">
+                                    <p>Особи - двоє дорослих від 15.03.2018 - 15.04.2018</p>
+                                    <div>Забронювати</div>
+                                </div>
+                                <div class="trap">
+                                    <p>ВІД 500$</p>
+                                    <img src="images/iconFire.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="showMore">
+                        <div class="tour">
+                            <img src="images/tourImg3.jpg" alt="Spain photo">
+                            <div class="topTour">
+                                <div class="stars"><img src="images/iconStars.png" alt=""></div>
+                                <div class="likes">
+                                    <div><img src="images/iconPerson.png" alt="">78</div>
+                                    <div><img src="images/iconHeart.png" alt="">15</div>
+                                </div>
+                            </div>
+                            <div class="tourContent">
+                                <p>Hotel LAMPA&PATAYA</p>
+                                <p>ІСПАНІЯ</p>
+                                <div class="reserve">
+                                    <p>Особи - двоє дорослих від 15.03.2018 - 15.04.2018</p>
+                                    <div>Забронювати</div>
+                                </div>
+                                <div class="trap">
+                                    <p>ВІД 500$</p>
+                                    <img src="images/iconFire.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="buttomShowMore">
+                    Показати більше пропозицій
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer start -->
+    <footer>
+        <div class="footerOverlay">
+            <div class="wrapperForFooter">
+                <nav class="footerNav">
+                    <ul>
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Автобусом в Європу</a></li>
+                        <li><a href="#">Країни</a></li>
+                        <li><a href="#">Круїзи</a></li>
+                        <li><a href="#">Тури Україною</a></li>
+                        <li><a href="#">Раннє бронювання</a></li>
+                        <li><a href="#">Акція одного дня</a></li>
+                        <li><a href="#">Акція на вікенд</a></li>
+                    </ul>
+                </nav>
+                <div class="footerContacts">
+                    <p>Адреса:</br>м. Львів, вул. Котлярська, 2</p>
+                    <p>Skype:</br>flora2115</p>
+                    <p>(032)297 16-45</br>(067)756 58-76</p>
+                    <div class="aboutDirector">
+                        <div class="director">
+                            <img src="images/photoDirector.jpg" alt="Photo director">
+                        </div>
+                        <p class="directorInfo">Директор:</br>Прізвище, ім'я, по-батькові</p>
+                    </div>
+                </div>
+                <div class="socialNetworksLinks">
+                    <p>Ми в соціальних мережах</p>
+                    <p>Знаходьте нас у соціальних мережах та підписуйтесь на цікаві новини</p>
+                    <div class="links">
+                        <a href="#"><img src="images/iconOk.svg" alt=""></a>
+                        <a href="#"><img src="images/iconG+.svg" alt=""></a>
+                        <a href="#"><img src="images/iconF.svg" alt=""></a>
+                        <a href="#"><img src="images/iconVK.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">&copy; 2017 <span>Otitour, туроператор</span></div>
+        </div>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
