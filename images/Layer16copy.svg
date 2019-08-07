@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 18" width="11" height="18">
+	<defs>
+		<image width="11" height="18" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAASCAYAAACNdSR1AAABdElEQVQ4T23ST6hPURTF8c+W/I9CiYyQpJSEmTKQMmAgZGBIUZiRDEUGFBMlxIQkKTJ/lKLIzOARIQP/SRJJHa3X+ZWntyf3du/3nL3W2rugtTYRa7EDKzEHH/AYl3G3qn5Wa20yNmEPlmFmLuj1FU9wFrcCb8RerO/Ae3zELMzt34ZwJvDVDk7HM1zHUyzCVizBDwwFzo/FeIUTuFZVn1trkbMZh7AQLwJ/6i3vY3c0VlXrxnPrOazBl8Dvuvs4319VOTRSrbVV0Yo83wZ+iOX4hhu4gjeYj+3Yhhl4FPgCNmAefsUInmMB1mESXg+iS747sSKd8Rt/MB4TUHgwiC4SDveY/pnHqNeLOBoZabMPBzF7DPoljuFSWsT1ahzAlv/gyDqPU1U1PIDHYRdOd0ODM5lB4syUR8QPMo3BI337puI7buN4VWWZRsFT+o6c7OPNnsTLvaznKLhrn9alZLfvdAkj4Fhwss1uL8UwblZVMh+pv0BajX40kEDjAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Footer">
+		<g id="Contact">
+			<g id="Address">
+				<use id="Layer 16 copy" href="#img1" x="0" y="0" />
+			</g>
+		</g>
+	</g>
+</svg>

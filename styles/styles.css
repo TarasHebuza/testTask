@@ -1,0 +1,764 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+/*header start*/
+.header {
+    background-color: rgba(212, 1, 25, 0.9);
+    padding: 15px 0 0;
+    width: 100%;
+    position: absolute;
+}
+
+.wrapperForHeader {
+    width: 77%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.companyLogo {
+    width: 13.5%;
+    height: 110px;
+    background-color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.companyLogo span {
+    color: #503392;
+}
+
+.navAndContacts {
+    width: 81%;
+}
+
+.topNavContacts {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+    padding: 0 0 10px;
+}
+
+.navAndContacts nav a {
+    font-size: 17px;
+    color: #fff;
+    font-family: "Georgia";
+}
+
+.topNav {
+    width: 26%;
+    padding: 10px 0 0;
+}
+
+.topNav ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topNav ul li {
+    width: 33%;
+    height: auto;
+}
+
+.contacts {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts div {
+	box-sizing: border-box;
+	padding-left: 11%;
+    width: 33%;
+    box-sizing: border-box;
+}
+
+.contacts div p {
+	text-align: left;
+}
+
+.skype,
+.phoneNumber {
+    border-left: 1px solid #fff;
+}
+
+.address::before {
+	content: '';
+	background-image: url(../images/Layer16copy.svg);
+	background-repeat: no-repeat;
+	width: 11px;
+	height: 19px;
+	display: block;
+	position: relative;
+	top: 26px;
+	right: 25px;
+} 
+
+.skype::before {
+	content: '';
+	background-image: url(../images/Layer19copy.png);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: relative;
+	top: 26px;
+	right: 25px;
+} 
+
+.phoneNumber::before {
+	content: '';
+	background-image: url(../images/Layer18copy.png);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: relative;
+	top: 26px;
+	right: 25px;
+} 
+
+.contacts p {
+    font-size: 15px;
+    color: #fff;
+    font-family: "Georgia";
+    text-align: center;
+    margin: 0;
+}
+
+.bottomNav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+
+}
+
+.bottomNav ul li {
+    width: 12%;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.bottomNav li:nth-child(3) >a:after {
+    content: '';
+    background-image: url(../images/arrowMore.png);
+	background-repeat: no-repeat;
+	width: 11px;
+	height: 8px;
+	display: block;
+	position: absolute;
+	right: calc(100% - 70px);
+	top: 7px;
+}
+
+.submenu {
+    position: absolute;
+    top: 53px;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: block !important;
+    visibility: hidden;
+}
+
+.submenu li {
+	padding: 0 !important;
+}
+
+.submenu li:nth-child(3) >a:after {
+	background-image: none;
+}
+
+.submenu li a {
+	width: 65px;
+    color: #fdfdfd;
+    padding: 15px 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fdfdfd;
+    font-family: "Font Awesome";
+    display: block;
+}
+
+.submenu li a:hover {
+	background-color: rgba(212, 1, 25, 0.9);
+}
+
+nav li:hover>.submenu {
+    visibility: visible;
+}
+
+.navButton {
+	display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+.mobileNavigation {
+    display: none;
+    position: absolute;
+    top: 18px;
+    z-index: 5;
+    min-width: 180px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.navButton:hover .mobileNavigation {
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+.mobileNavigation .navMenu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.mobileNavigation .navMenu li {
+    width: 100%;
+    list-style-type: none;
+}
+
+.mobileNavigation .navMenu li a {
+	width: 100%;
+	text-decoration: none;
+    color: #fdfdfd;
+    padding: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fdfdfd;
+}
+
+.contMobile {
+	display: none;
+	width: 85% !important;
+
+}
+/*header end*/
+
+/*main start*/
+/*slider start*/
+.slider {
+  	width: 100%;
+    background-image: url(../images/basicBackground.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.overlaySlider {
+	width: 100%;
+	padding: 300px 0;     
+	background-color: rgba(22, 20, 20, 0.3); 
+}
+
+.wrapperSlider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+	margin-left: 0;
+    width: 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    transition: margin-left 1s;
+}
+
+.slide {
+    width: 25%;
+}
+
+.slide h1 {
+    font-size: 49px;
+    line-height: 95px;
+    color: #fff;
+    font-family: "Georgia";
+    text-align: center;
+}
+
+.slide p {
+	width: 60%;
+	margin: 0 auto; 
+    height: 108px;
+    font-size: 27px;
+    line-height: 42px;
+    color: #fff;
+    font-family: "Georgia";
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.sliderDots {
+	width: 100px;
+	display: flex;
+	justify-content: space-between; 
+	position: absolute;
+	left: calc(50% - 50px);
+	bottom: -55px;
+}
+
+.sliderDots div {
+	width: 14px;
+	height: 14px;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	-o-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.sliderDots div:hover {
+	background-color: #fff;
+	-o-transform: scale(2);
+    -ms-transform: scale(2);
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
+/*slider end*/
+
+/*hot yours start*/
+.hotTours {
+	padding: 100px 0 70px;
+	background-color: #fff;
+}
+
+.wrapperHotTours {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.wrapperHotTours h2 {
+	margin: 0;
+    font-size: 40px;
+    line-height: 31px;
+    color: #282828;
+    font-family: "Georgia";
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wrapperHotTours p {
+    font-size: 22px;
+    color: #252e37;
+    font-family: "Georgia";
+    text-align: center;
+}
+
+.allTours {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 90px;
+	flex-wrap: wrap;
+}
+
+.allTours > a {
+	width: 22%;
+	margin-bottom: 50px;
+	-o-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.allTours>a:hover {
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.tour {
+	width: 100%;
+	position: relative;
+	box-shadow: 0 0 13px rgba(0,0,0,0.5);
+}
+
+.tour img {
+	width: 100%;
+}
+
+.topTour {
+	background-color: rgba(37, 46, 55, 0.5);
+	width: 100%;
+	height: 35px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 15px;
+	position: absolute;
+	top: 0;
+}
+
+.stars {
+	width: 30%;
+}
+
+.likes {
+	width: 30%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.likes div {
+	width: 35%;
+	font-size: 14px;
+	color: #fbfbfb;
+	font-family: "Georgia";
+	text-align: center;
+	position: relative;
+}
+
+.likes div img {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 3px;
+	right: 25px;
+}
+
+.tourContent {
+	padding: 20px 10px; 
+}
+
+.tourContent p {
+    font-size: 14px;      
+    color: #191919;
+    font-family: "Georgia";
+    text-align: center;
+    text-align: left;
+}
+
+.tourContent p:nth-child(2) {
+	font-size: 14px;  
+}
+
+.tourContent >p:first-child::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #252e37;
+	position: relative;
+	top: 8px;
+}
+
+.reserve {
+	margin-top: 35px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.reserve p {
+	width: 50%;
+	margin: 0;
+}
+
+.reserve div {
+    width: 50%;
+    height: 32px;
+    font-size: 10px;     
+    color: #000;
+    font-family: "Georgia";
+    text-transform: uppercase;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid #252e37;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out; 
+}
+
+.reserve div:hover {
+	background-color: #cf1327;
+	color: #fff;
+}
+
+.trap {
+  width: 25%;
+  height: 0px;
+  border-bottom: 50px solid #252e37;
+  border-left: 50px solid transparent;
+  border-right: 0px solid transparent;
+  position: absolute;
+  right: 10px;
+  bottom: 105px;
+  padding-top: 30px;
+}
+
+.trap p {
+    font-size: 12px;   
+    color: #ffffff;
+    font-family: "Georgia";
+    margin-top: 18px;
+}
+
+.trap img {
+	width: 17px;
+	height: 19px;
+	position: relative;
+	right: 30px;
+	bottom: 30px;
+}
+
+.showMore {
+	display: none;
+}
+
+.buttomShowMore {
+    border: 1px solid #252e37;
+    border-radius: 3px;
+    width: 260px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #252e37;
+    font-family: "Georgia";
+	position: relative;
+	transition: all 0.4s ease-in-out;
+}
+
+.buttomShowMore::after {
+    content: '';
+    background-image: url(../images/arrow.png);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 14px;
+	display: block;
+	position: absolute;
+	right: 18px;
+	top: 15px;
+}
+
+.buttomShowMore:hover {
+	background-color: #cf1327;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*hot tours end*/
+/*main end*/
+
+/*footer start*/
+footer {
+    width: 100%;
+    background-image: url(../images/footerBackground.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.footerOverlay {
+    width: 100%;
+    padding: 55px 0 15px;
+    background: rgba(22, 27, 33, 0.97);
+}
+
+.wrapperForFooter {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerNav,
+.footerContacts,
+.socialNetworksLinks {
+    width: 31%;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    padding: 20px 0 20px 8%;
+}
+
+.footerNav ul li {
+    color: #fff;
+    -o-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.footerNav ul li:hover {
+    color: #ff0000;
+    -o-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    -moz-transform: translateX(12px);
+    -webkit-transform: translateX(12px);
+    transform: translateX(12px);
+}
+
+.footerNav a {
+    font-size: 17px;
+    line-height: 29px;
+    color: #ffffff;
+    font-family: "Georgia";
+    transition: color 0.4s ease-in-out;
+}
+
+.footerNav a:hover {
+	color: #ff0000;
+}
+
+.footerContacts {
+	position: relative;
+}
+
+.footerContacts p {
+    font-size: 16px;
+    color: #fff;
+    font-family: "Georgia";
+    margin: 0;
+}
+
+.footerContacts > p:nth-child(1)::before {
+	content: '';
+	background-image: url(../images/Layer16copy.svg);
+	background-repeat: no-repeat;
+	width: 11px;
+	height: 19px;
+	display: block;
+	position: relative;
+	right: 30px;
+	top: 26px;
+} 
+
+.footerContacts > p:nth-child(2)::before {
+	content: '';
+	background-image: url(../images/Layer19copy.png);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: relative;
+	right: 30px;
+	top: 26px;
+} 
+
+.footerContacts > p:nth-child(3)::before {
+	content: '';
+	background-image: url(../images/Layer18copy.png);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: relative;
+	right: 30px;
+	top: 26px;
+} 
+
+.footerContacts p:nth-child(3)::after {
+	content: '';
+	display: block;
+	background-color: #fff;
+	width: 80%;
+	height: 1px;
+	position: relative;
+	top: 20px;
+} 
+
+.aboutDirector {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.director {
+	width: 51px;
+	height: 51px;
+	border: 1px solid #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.directorInfo {
+	width: 70%;
+}
+
+.socialNetworksLinks {
+	padding: 40px 0 0; 
+	text-align: center;
+}
+
+.socialNetworksLinks p:first-child {
+    font-size: 21px;
+    line-height: 20px;
+    color: #ffffff;
+    font-family: "Georgia";
+    text-transform: uppercase;
+}
+
+.socialNetworksLinks p:nth-child(2) {
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    font-family: "Georgia";
+    text-align: center;
+}
+
+.links {
+	width: 60%;
+	margin: 40px auto 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.links a {
+	width: 24%;
+}
+
+.links img {
+	width: 100%;
+	max-width: 39px;
+	transition: all 0.4s ease-in-out;
+}
+
+.links img:hover {
+	transform: scale(1.4);
+}
+
+.copy {
+	text-align: center;
+	font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    font-family: "Georgia";
+    margin: 25px 0 0;
+} 
+
+.copy span {
+    text-transform: uppercase;
+}
+/*footer end*
